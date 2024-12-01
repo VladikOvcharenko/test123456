@@ -40,7 +40,7 @@
           </ul>
           <div class="header-btn flex">
             <div class="btn-decor">
-              <a href="" class="btn btn-black">Вхід в кабінет</a>
+              <a href="" class="btn-black btn">Вхід в кабінет</a>
             </div>
             <a href="" class="header-btn btn" data="open-modal">Консультація</a>
           </div>
@@ -55,7 +55,7 @@
       <section class="hero">
         <div class="hero-container container flex">
           <img src="images/flag.png" alt="" width="47px" height="35px" />
-          <h1 class="hero-title">
+          <h1 class="hero-title title">
             Інвестуйте з Billions —
             <span class="color-text">стабільний дохід</span> і прозоре
             управління
@@ -442,18 +442,71 @@
       <div class="footer-container container flex">
         <ul class="footer-social flex">
           <li>
-            <a href=""><img src="images/facebook.svg" alt="" />Facebook</a>
+            <a href="" class="text"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              Facebook</a
+            >
           </li>
           <li>
-            <a href=""> <img src="images/telegram.svg" alt="" />Telegram</a>
+            <a href="" class="text">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.985 13.408L14.227 17.094C15.427 18.459 16.028 19.142 16.657 18.975C17.285 18.809 17.501 17.911 17.932 16.114L20.322 6.14604C20.987 3.37804 21.319 1.99504 20.581 1.31204C19.843 0.629039 18.564 1.13704 16.006 2.15204L4.13998 6.86504C2.09398 7.67804 1.07099 8.08404 1.00599 8.78204C0.99833 8.85317 0.99833 8.92491 1.00599 8.99604C1.06899 9.69504 2.08998 10.104 4.13398 10.923C5.05898 11.294 5.52199 11.48 5.85399 11.835C5.89132 11.875 5.92732 11.9164 5.96199 11.959C6.26799 12.339 6.39799 12.839 6.65899 13.835L7.14798 15.702C7.40098 16.672 7.52799 17.158 7.86099 17.224C8.19399 17.29 8.48299 16.888 9.06199 16.083L10.985 13.408ZM10.985 13.408L10.668 13.078C10.306 12.7 10.125 12.512 10.125 12.278C10.125 12.044 10.305 11.855 10.668 11.478L14.241 7.75404"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Telegram</a
+            >
           </li>
           <li>
-            <a href=""><img src="images/instagram.svg" alt="" />Instagram</a>
+            <a href="" class="text"
+              ><svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 11C1.5 6.522 1.5 4.282 2.891 2.891C4.282 1.5 6.521 1.5 11 1.5C15.478 1.5 17.718 1.5 19.109 2.891C20.5 4.282 20.5 6.521 20.5 11C20.5 15.478 20.5 17.718 19.109 19.109C17.718 20.5 15.479 20.5 11 20.5C6.522 20.5 4.282 20.5 2.891 19.109C1.5 17.718 1.5 15.479 1.5 11Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.508 5.5H16.498M15.5 11C15.5 12.1935 15.0259 13.3381 14.182 14.182C13.3381 15.0259 12.1935 15.5 11 15.5C9.80653 15.5 8.66193 15.0259 7.81802 14.182C6.97411 13.3381 6.5 12.1935 6.5 11C6.5 9.80653 6.97411 8.66193 7.81802 7.81802C8.66193 6.97411 9.80653 6.5 11 6.5C12.1935 6.5 13.3381 6.97411 14.182 7.81802C15.0259 8.66193 15.5 9.80653 15.5 11Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Instagram</a
+            >
           </li>
         </ul>
         <form action="" class="footer-form flex">
-          <input type="text" class="input-reset footer-input" />
-          <input type="tel" class="input-reset footer-input" />
+          <input type="text" class="input-reset footer-input input" />
+          <input type="tel" class="input-reset footer-input input" />
           <button class="btn-reset btn" data="open-modal">Консультація</button>
         </form>
       </div>
@@ -473,7 +526,7 @@
               type="text"
               name="name"
               placeholder="Ваше ім’я"
-              class="modal-form__item--input input-reset"
+              class="modal-form__item--input input-reset input"
             />
           </div>
           <div class="modal-form__item">
@@ -484,7 +537,7 @@
               type="text"
               name="value"
               placeholder="Сума вкладу"
-              class="modal-form__item--input input-reset"
+              class="modal-form__item--input input-reset input"
             />
           </div>
           <div class="modal-form__item">
@@ -493,7 +546,7 @@
               type="tel"
               name="phone"
               placeholder="Номер телефону"
-              class="modal-form__item--input input-reset"
+              class="modal-form__item--input input-reset input"
             />
           </div>
           <div class="modal-form__item">
@@ -501,7 +554,7 @@
             <input
               type="email"
               name="email"
-              class="modal-form__item--input input-reset"
+              class="modal-form__item--input input-reset input"
             />
           </div>
           <button class="btn-reset btn modal-form__btn">
