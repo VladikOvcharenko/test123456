@@ -40,27 +40,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalForm = document.querySelector('.modal-form');
   const modalThx = document.querySelector('.modal-thx');
 
-  // Открытие модального окна
   openModalBtn.forEach((button) => {
     button.addEventListener('click', (event) => {
-      event.preventDefault(); // Правильный вызов preventDefault
-      const modal = document.querySelector('#modal'); // Получаем модальное окно
-
+      event.preventDefault();
+      const modal = document.querySelector('#modal'); //
       if (modal) {
-        modal.classList.add('modal-active'); // Добавляем активный класс
+        modal.classList.add('modal-active');
       } else {
         console.error('Модальное окно с id="modal" не найдено.');
       }
     });
   });
 
-  // Закрытие модального окна
   if (closeModalBtn) {
     closeModalBtn.addEventListener('click', () => {
-      const modal = document.querySelector('#modal'); // Получаем модальное окно
+      const modal = document.querySelector('#modal');
 
       if (modal) {
-        modal.classList.remove('modal-active'); // Убираем активный класс
+        modal.classList.remove('modal-active');
       } else {
         console.error('Модальное окно с id="modal" не найдено.');
       }
@@ -73,11 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.querySelector('#modal');
   if (modal) {
     modal.addEventListener('click', (event) => {
-      const modalForm = modal.querySelector('.modal-form'); // Находим форму внутри модального окна
+      const modalForm = modal.querySelector('.modal-decor');
 
-      // Проверяем, был ли клик за пределами формы
       if (!modalForm.contains(event.target)) {
-        modal.classList.remove('modal-active'); // Убираем активный класс
+        modal.classList.remove('modal-active');
       }
     });
   }
