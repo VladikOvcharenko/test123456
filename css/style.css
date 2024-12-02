@@ -441,6 +441,7 @@
   border-top: 1px solid var(--container-border-color);
 
   .footer-container {
+    width: 100%;
     justify-content: space-between;
   }
   .footer-social {
