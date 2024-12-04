@@ -4,11 +4,12 @@
 
   --accent-color: #523dd7;
   --light-color: #ffffff;
-  --bg-color: #1e1e1e;
   --gray-color: #121212;
 
   --body-bg-color: linear-gradient(180deg, #121212 10.69%, #040404 100%);
+  --bg-color: #1e1e1e;
   --item-bg-color: rgba(20, 20, 20, 0.98);
+  --input-bg-color: #101010;
 
   --company-border-color: rgba(255, 255, 255, 0.19);
   --input-border-color: #2d2828;
